@@ -1,0 +1,106 @@
+.root {
+    -fx-background-color: #1a1a1a;
+    -fx-max-width: 500px;
+}
+
+.header-text {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-fill: #00ff9d;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.label-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+.combo-box {
+    -fx-min-width: 200px;
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+}
+
+.combo-box .cell {
+    -fx-text-fill: white;
+    -fx-background-color: #2d2d2d;
+}
+
+.combo-box .list-view {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #00ff9d;
+    -fx-border-radius: 8;
+}
+
+.combo-box:hover {
+    -fx-border-color: #00ff9d;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+}
+
+.text-field {
+    -fx-min-width: 420px;
+    -fx-padding: 12;
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 8;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #808080;
+}
+
+.text-field:focused {
+    -fx-border-color: #00ff9d;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+}
+
+.convert-button {
+    -fx-background-color: #00ff9d;
+    -fx-text-fill: #1a1a1a;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 15 25;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 157, 0.3), 10, 0, 0, 0);
+}
+
+.convert-button:hover {
+    -fx-background-color: #00cc7d;
+    -fx-effect: dropshadow(gaussian, rgba(0, 255, 157, 0.5), 15, 0, 0, 0);
+}
+
+.results-area {
+    -fx-padding: 15;
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}
+
+.result-text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #00ff9d;
+    -fx-font-weight: bold;
+}
+
+.error-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ff4d4d;
+}
+
+/* Scrollbar styling */
+.scroll-bar {
+    -fx-background-color: #1a1a1a;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #00ff9d;
+    -fx-background-radius: 8;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+} 

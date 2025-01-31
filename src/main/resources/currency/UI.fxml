@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox spacing="25" styleClass="root" stylesheets="@styles.css"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="currency.UIController">
+    <padding>
+        <Insets topRightBottomLeft="35"/>
+    </padding>
+
+    <!-- Header -->
+    <Text styleClass="header-text" text="Currency Converter"/>
+
+    <!-- Main Content -->
+    <GridPane hgap="20" vgap="20">
+        <!-- From Currency -->
+        <VBox spacing="8" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <Label text="From Currency" styleClass="label-text"/>
+            <ComboBox fx:id="fromCurrencyBox" styleClass="combo-box"/>
+        </VBox>
+
+        <!-- To Currency -->
+        <VBox spacing="8" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <Label text="To Currency" styleClass="label-text"/>
+            <ComboBox fx:id="toCurrencyBox" styleClass="combo-box"/>
+        </VBox>
+
+        <!-- Amount Input -->
+        <VBox spacing="8" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2">
+            <Label text="Amount" styleClass="label-text"/>
+            <TextField fx:id="amountField" styleClass="text-field" promptText="Enter amount to convert"/>
+        </VBox>
+    </GridPane>
+
+    <!-- Convert Button -->
+    <Button fx:id="convertButton" text="CONVERT" styleClass="convert-button"/>
+
+    <!-- Results Area -->
+    <VBox spacing="10" styleClass="results-area">
+        <Label fx:id="resultLabel" styleClass="result-text"/>
+        <Label fx:id="errorLabel" styleClass="error-text"/>
+    </VBox>
+</VBox>
